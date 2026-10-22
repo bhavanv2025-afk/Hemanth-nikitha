@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Join us for the wedding of Hemanth and Nikhita — Reception 31 October, Muhurtham 1 November 2026, Sri Anjanadri Samudhaya Bhavana, Budigere, Bengaluru.">
+<meta name="theme-color" content="#5b1a23">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hemanth & Nikhita | Wedding Invitation">
+<meta property="og:description" content="Reception 31 Oct · Muhurtham 1 Nov 2026 · Budigere, Bengaluru">
+<meta property="og:image" content="/assets/og.jpg">
+<title>Hemanth &amp; Nikhita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=Noto+Serif+Kannada:wght@500;600&display=swap">
+<style>
+/* Layout: one narrow scroll of an invitation card — maroon photo bands open and close, cream paper holds the details. Single committed look (no dark variant). */
+:root{
+  --maroon:#5b1a23; --maroon-2:#7a2632; --gold:#c9a25b; --gold-soft:#e6cf98;
+  --paper:#fbf4ea; --paper-2:#f3e6d3; --ink:#3b1e20; --muted:#8a6a5d; --line:#e4d2b8;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --kn:"Noto Serif Kannada","Tunga","Kedage",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-weight:400;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--body);font-size:13px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold)}
+.kn{font-family:var(--kn);font-weight:600;letter-spacing:.01em}
+.motif{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold)}
+.motif::before,.motif::after{content:"";height:1px;width:56px;background:currentColor;opacity:.7}
+.motif svg{width:18px;height:18px}
+
+/* Hero */
+.hero{position:relative;color:var(--paper);overflow:hidden;background:var(--maroon)}
+.hero .photo{position:relative;height:clamp(440px,118vw,620px);overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%;animation:drift 18s ease-out both}
+.hero .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(91,26,35,.35) 0%,rgba(91,26,35,0) 22%,rgba(91,26,35,0) 58%,var(--maroon) 100%)}
+.hero .top{position:absolute;z-index:1;top:22px;left:0;right:0;text-align:center;color:var(--gold-soft)}
+.hero .wrap{position:relative;z-index:1;margin-top:-96px;padding-block:0 40px;text-align:center;display:grid;gap:18px;justify-items:center;animation:rise 1.4s ease-out both}
+.names{font-family:var(--display);font-size:clamp(46px,13vw,68px);line-height:1.05}
+.names .amp{color:var(--gold);font-family:var(--body);font-style:italic}
+.hero p{margin:0;font-style:italic;font-size:20px;max-width:30ch;color:#f6e7d6}
+.datepill{border:1px solid rgba(230,207,152,.7);border-radius:999px;padding:10px 26px;font-family:var(--display);font-size:20px;color:var(--paper);background:rgba(91,26,35,.35)}
+.down{color:var(--gold-soft);display:inline-flex;padding:6px;border-radius:50%}
+.down svg{width:22px;height:22px;animation:bob 2.4s ease-in-out infinite}
+
+/* Blessing band */
+.blessing{position:relative;color:var(--paper);text-align:center;overflow:hidden;background:var(--maroon)}
+.blessing img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.blessing::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(91,26,35,.72),rgba(122,38,50,.45) 55%,rgba(91,26,35,.7))}
+.blessing .wrap{position:relative;z-index:1;padding-block:88px;display:grid;gap:18px}
+.blessing .kn{font-size:34px;color:var(--gold-soft)}
+.blessing p{margin:0;font-size:23px;line-height:1.5}
+
+/* Sections */
+section.block{padding-block:72px 8px}
+.head{text-align:center;display:grid;gap:10px;margin-bottom:34px}
+.head h2{font-family:var(--display);font-size:clamp(32px,9vw,40px);color:var(--maroon)}
+
+/* Countdown */
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}
+.count div{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:14px 4px 10px}
+.count b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(28px,8vw,36px);color:var(--maroon);font-variant-numeric:tabular-nums;line-height:1.1}
+.count span{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.count-note{text-align:center;font-style:italic;color:var(--muted);margin:16px 0 0}
+
+/* Events */
+.events{display:grid;gap:20px}
+.event{background:#fffaf3;border:1px solid var(--line);border-radius:18px;padding:26px 24px;display:grid;gap:12px;box-shadow:0 10px 30px -18px rgba(91,26,35,.35)}
+.event .kn{color:var(--gold);font-size:19px}
+.event h3{font-family:var(--display);font-size:30px;color:var(--maroon);margin-top:-6px}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:19px;margin:0}
+.meta dt{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);align-self:center}
+.meta dd{margin:0}
+.event p{margin:0;font-style:italic;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-family:var(--body);font-weight:600;font-size:16px;letter-spacing:.06em;color:var(--maroon);text-decoration:none;border:1px solid var(--gold);border-radius:999px;padding:8px 18px;background:transparent}
+.btn:hover{background:var(--paper-2)}
+.btn:focus-visible,.down:focus-visible,.music:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn svg{width:16px;height:16px}
+
+/* Venue */
+.venue{margin-top:28px;background:var(--paper-2);border-radius:18px;padding:32px 24px;text-align:center;display:grid;gap:8px;justify-items:center}
+.venue h3{font-family:var(--display);font-size:27px;color:var(--maroon);line-height:1.25}
+.venue .place{color:var(--muted);font-style:italic;margin:0 0 10px}
+.btn.solid{background:var(--maroon);color:var(--paper);border-color:var(--maroon);justify-self:center}
+.btn.solid:hover{background:var(--maroon-2)}
+
+/* Moments */
+.moments{display:grid;gap:44px}
+figure{margin:0;display:grid;gap:14px;text-align:center}
+figure img{width:100%;max-width:100%;border-radius:18px;box-shadow:0 18px 40px -22px rgba(59,30,32,.55);display:block}
+figure .tall{aspect-ratio:3/4;object-fit:cover;object-position:50% 55%}
+figure .wide{aspect-ratio:16/10;object-fit:cover}
+figcaption .kn{display:block;color:var(--gold);font-size:26px}
+figcaption i{color:var(--maroon-2);font-size:20px}
+
+/* Closing */
+.closing{margin-top:84px;background:var(--maroon);color:var(--paper);text-align:center}
+.closing .wrap{padding-block:64px 96px;display:grid;gap:18px;justify-items:center}
+.closing .names{font-size:clamp(38px,11vw,52px)}
+.closing p{margin:0;font-style:italic;color:#ecd9c5;max-width:32ch}
+.closing .btn{color:var(--gold-soft);border-color:rgba(230,207,152,.6)}
+.closing .btn:hover{background:rgba(255,255,255,.06)}
+.closing .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.closing .eyebrow{color:var(--gold-soft)}
+
+/* Music toggle (small, so guests can mute) */
+.music{position:fixed;z-index:20;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--gold);background:var(--maroon);color:var(--gold-soft);border-radius:50%;cursor:pointer;box-shadow:0 8px 24px -10px rgba(0,0,0,.5);padding:0}
+.music svg{width:20px;height:20px}
+.music .bars{display:none;align-items:flex-end;gap:2px;height:16px}
+.music .bars i{width:3px;background:currentColor;border-radius:1px;animation:eq 1s ease-in-out infinite}
+.music .bars i:nth-child(2){animation-delay:.25s}.music .bars i:nth-child(3){animation-delay:.5s}
+.music[aria-pressed="true"] .bars{display:flex}
+.music[aria-pressed="true"] .note{display:none}
+
+@keyframes rise{from{transform:translateY(14px);opacity:.25}to{transform:none;opacity:1}}
+@keyframes drift{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@keyframes eq{0%,100%{height:4px}50%{height:16px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}html{scroll-behavior:auto}.music .bars i{height:10px}}
+</style>
+<style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c.6 4.6 2.4 7.4 10 10-7.6 2.6-9.4 5.4-10 10-.6-4.6-2.4-7.4-10-10 7.6-2.6 9.4-5.4 10-10z"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="photo">
+    <img src="assets/hero.jpg" alt="Hemanth and Nikhita seated on temple steps">
+    <div class="top eyebrow">Shubha Vivaha</div>
+  </div>
+  <div class="wrap">
+    <div class="motif"><svg><use href="#star"/></svg></div>
+    <h1 class="names">Hemanth<br><span class="amp">&amp;</span> Nikhita</h1>
+    <p>Together with our families, we joyfully invite you to share in our happiness.</p>
+    <div class="datepill">31 October &amp; 1 November</div>
+    <a class="down" href="#celebrations" aria-label="Scroll to the celebrations"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 4v15m-6-6 6 6 6-6"/></svg></a>
+  </div>
+</header>
+
+<div class="blessing">
+  <img src="assets/temple.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="motif"><svg><use href="#star"/></svg></div>
+    <div class="kn">ಶುಭ ವಿವಾಹ</div>
+    <p>Two families, one blessing —<br>we invite you to share our joy.</p>
+  </div>
+</div>
+
+<section class="block wrap" aria-labelledby="cd-h">
+  <div class="head">
+    <div class="eyebrow">Counting down to</div>
+    <h2 id="cd-h">The Muhurtham</h2>
+  </div>
+  <div class="count" id="count">
+    <div><b id="d">--</b><span>Days</span></div>
+    <div><b id="h">--</b><span>Hours</span></div>
+    <div><b id="m">--</b><span>Mins</span></div>
+    <div><b id="s">--</b><span>Secs</span></div>
+  </div>
+  <p class="count-note" id="count-note">Sunday, 1 November 2026 · 6:00 AM</p>
+</section>
+
+<section class="block wrap" id="celebrations" aria-labelledby="ev-h">
+  <div class="head">
+    <div class="eyebrow">Join us for</div>
+    <h2 id="ev-h">The Celebrations</h2>
+    <div class="motif"><svg><use href="#star"/></svg></div>
+  </div>
+  <div class="events">
+    <article class="event">
+      <div class="kn">ಆರತಕ್ಷತೆ</div>
+      <h3>Reception</h3>
+      <dl class="meta"><dt>Date</dt><dd>Saturday, 31st October</dd><dt>Time</dt><dd>7:00 PM onwards</dd></dl>
+      <p>An evening of blessings, dinner and celebration.</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hemanth%20%26%20Nikhita%20%E2%80%94%20Reception&dates=20261031T133000Z/20261031T170000Z&location=Sri%20Anjanadri%20Samudhaya%20Bhavana%2C%20Budigere%2C%20Bengaluru&details=Reception%20of%20Hemanth%20%26%20Nikhita"><svg><use href="#cal"/></svg>Add to calendar</a>
+    </article>
+    <article class="event">
+      <div class="kn">ಮುಹೂರ್ತ</div>
+      <h3>Muhurtham</h3>
+      <dl class="meta"><dt>Date</dt><dd>Sunday, 1st November</dd><dt>Time</dt><dd>6:00 AM</dd></dl>
+      <p>The sacred wedding ceremony. Your presence is our blessing.</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hemanth%20%26%20Nikhita%20%E2%80%94%20Muhurtham&dates=20261101T003000Z/20261101T033000Z&location=Sri%20Anjanadri%20Samudhaya%20Bhavana%2C%20Budigere%2C%20Bengaluru&details=Wedding%20Muhurtham%20of%20Hemanth%20%26%20Nikhita"><svg><use href="#cal"/></svg>Add to calendar</a>
+    </article>
+  </div>
+  <div class="venue">
+    <div class="eyebrow">Venue</div>
+    <h3>Sri Anjanadri<br>Samudhaya Bhavana</h3>
+    <p class="place">Budigere, Bengaluru</p>
+    <a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sri+Anjanadri+Samudhaya+Bhavana+Budigere+Bengaluru"><svg><use href="#pin"/></svg>Get directions</a>
+  </div>
+</section>
+
+<section class="block wrap" aria-labelledby="mo-h">
+  <div class="head">
+    <div class="eyebrow">Our moments</div>
+    <h2 id="mo-h">Together</h2>
+    <div class="motif"><svg><use href="#star"/></svg></div>
+  </div>
+  <div class="moments">
+    <figure>
+      <img class="wide" src="assets/together.jpg" alt="Hemanth and Nikhita standing in a green paddy field" loading="lazy">
+      <figcaption><span class="kn">ಜೊತೆಯಲ್ಲಿ</span><i>In every season, we grow together.</i></figcaption>
+    </figure>
+    <figure>
+      <img class="tall" src="assets/journey.jpg" alt="Hemanth and Nikhita with a white jeep" loading="lazy">
+      <figcaption><span class="kn">ಪಯಣ</span><i>Every road is better with you beside me.</i></figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer class="closing">
+  <div class="wrap">
+    <div class="motif"><svg><use href="#star"/></svg></div>
+    <div class="eyebrow">With love and blessings</div>
+    <div class="names">Hemanth <span class="amp">&amp;</span> Nikhita</div>
+    <p>We look forward to celebrating with you.</p>
+    <div class="row">
+      <a class="btn" id="wa" target="_blank" rel="noopener" href="https://wa.me/?text=You%27re%20invited%20to%20the%20wedding%20of%20Hemanth%20%26%20Nikhita%20%E2%80%94%2031%20Oct%20%26%201%20Nov">Share on WhatsApp</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sri+Anjanadri+Samudhaya+Bhavana+Budigere+Bengaluru"><svg><use href="#pin"/></svg>Venue map</a>
+    </div>
+  </div>
+</footer>
+
+<button class="music" id="music" type="button" aria-pressed="false" aria-label="Play or pause music">
+  <svg class="note" viewBox="0 0 24 24"><path fill="currentColor" d="M9 18.5A2.5 2.5 0 1 1 7 16.05V5l11-2v12.5a2.5 2.5 0 1 1-2-2.45V7.3L9 8.6v9.9z"/></svg>
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+<audio id="song" src="assets/music.mp3" loop autoplay preload="auto"></audio>
+
+<script>
+(function(){
+  // Countdown to Muhurtham: Sun 1 Nov 2026, 6:00 AM IST = 00:30 UTC
+  var target = Date.UTC(2026,10,1,0,30,0);
+  var el = {d:document.getElementById('d'),h:document.getElementById('h'),m:document.getElementById('m'),s:document.getElementById('s')};
+  function pad(n){return n<10?'0'+n:''+n}
+  function tick(){
+    var diff = target - Date.now();
+    if(diff<=0){
+      document.getElementById('count').hidden = true;
+      document.getElementById('count-note').textContent = 'Married on 1 November 2026. Thank you for your blessings.';
+      return;
+    }
+    var s=Math.floor(diff/1000);
+    el.d.textContent=Math.floor(s/86400);
+    el.h.textContent=pad(Math.floor(s%86400/3600));
+    el.m.textContent=pad(Math.floor(s%3600/60));
+    el.s.textContent=pad(s%60);
+    setTimeout(tick,1000);
+  }
+  tick();
+
+  // Music plays automatically. Where the browser blocks sound until a touch,
+  // it starts on the guest's first touch, tap, scroll gesture or key press.
+  var song=document.getElementById('song'), btn=document.getElementById('music');
+  var userPaused=false;
+  song.volume=0.6;
+  function setState(on){btn.setAttribute('aria-pressed',on?'true':'false')}
+  song.addEventListener('play',function(){setState(true)});
+  song.addEventListener('pause',function(){setState(false)});
+  function tryPlay(){
+    if(userPaused || !song.paused) return;
+    var p=song.play(); if(p&&p.catch) p.catch(function(){});
+  }
+  var evs=['pointerdown','touchstart','touchend','click','keydown','wheel'];
+  function onGesture(e){
+    if(e && e.target && e.target.closest && e.target.closest('#music')) return;
+    tryPlay();
+    if(!song.paused) evs.forEach(function(t){document.removeEventListener(t,onGesture,true)});
+  }
+  evs.forEach(function(t){document.addEventListener(t,onGesture,{capture:true,passive:true})});
+  tryPlay();
+  window.addEventListener('load',tryPlay);
+  btn.addEventListener('click',function(){
+    if(song.paused){userPaused=false;song.play().catch(function(){})}
+    else{userPaused=true;song.pause()}
+  });
+
+  // WhatsApp share text with the live link when hosted on its own site
+  try{
+    if(/^https?:/.test(location.href) && location.hostname.indexOf('claude')===-1){
+      var msg="You're invited to the wedding of Hemanth & Nikhita — 31 Oct & 1 Nov, Budigere, Bengaluru.\n"+location.origin+location.pathname;
+      document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent(msg);
+    }
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>
